@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Layout</title>
 </head>
+
 <body>
     <div>
+        <h1>Travel Form</h1>
+        <!-- Here the for="" attribute of label tag is used so that we know what kind of input we are getting og which id and from where . As name1 in the label and name1 in the inupt tag's id attribute link these two components.-->
+        <!-- placeholder is used for displaying the words you want in case of no input -->
         <form action="form.php">
-            <input type="text" name="" id="">
+            <label for="name1">Name:
+                <input type="text" id="name1" placeholder="Enter your name">
+            </label><br>
+            <!-- here the for attribute is different for both radio button with id secIDA and secIDB AS ID CANNOT BE SAME for two tags and the name attribute is kept same so that only one of button can be used at a time. -->
+            <!-- If we put all the input radio buttons under the same label both butons can be pressed hence increasing the chances of error in a form -->
+            <label for="secIDA">Section:
+                <input type="radio" name="section" id="secIDA">A
+            </label>
+            <label for="secIDB">
+                <input type="radio" name="section" id="secIDB">B
+            </label>
+            <label for="secIDC">
+                <input type="radio" name="section" id="secIDC">C
+            </label><br>
+            <!-- name is the attribute that is used to identify the elements in front-end by backend framework -->
+            <label>Menu: </label><br>
+            <input type="checkbox" name="canteen food" id="food1" class="red">
+            <label for="food1">Samosa</label><br>
+            <input type="checkbox" name="canteen food" id="food2" class="red">
+            <label for="food2">Sandwich</label><br>
+            <input type="checkbox" name="canteen food" id="food3" class="red">
+            <label for="food3">Tea</label><br>
+            <input type="checkbox" name="canteen food" id="food4" class="red">
+            <label for="food4">Coffee</label><br>
+
+            <textarea name="exp" id="exp" cols="30" rows="5" placeholder="Give a description"></textarea><br>
+            
+            <label>CARS: </label>
+            <select name="car" id="cars">
+                <option value="no-cars">Select your car</option>
+                <option value="cars">Ashton Martin</option>
+                <option value="cars">Audi</option>
+            </select><br>
         </form>
     </div>
 </body>
