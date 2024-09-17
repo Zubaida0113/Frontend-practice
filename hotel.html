@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hotel Accommodation Details</h1>
+    <div class="hotel-info">
+        <h2>Sunset Paradise Resort</h2>
+        <p>Experience luxury and comfort at our beachfront resort.</p>
+        
+        <h3>Room Types</h3>
+        <ul>
+            <li>Standard Room</li>
+            <li>Deluxe Suite</li>
+            <li>Ocean View Villa</li>
+            <li>Family Suite</li>
+        </ul>
+        
+        <h3>Amenities</h3>
+        <ul>
+            <li>Free Wi-Fi</li>
+            <li>Swimming Pool</li>
+            <li>Fitness Center</li>
+            <li>On-site Restaurant</li>
+            <li>24/7 Room Service</li>
+        </ul>
+        
+        <h3>Rates</h3>
+        <table>
+            <tr>
+                <th>Room Type</th>
+                <th>Price per Night</th>
+            </tr>
+            <tr>
+                <td>Standard Room</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Deluxe Suite</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Ocean View Villa</td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>Family Suite</td>
+                <td>$200</td>
+            </tr>
+        </table>
+        
+        <h3>Contact Information</h3>
+        <p>
+            Address: 123 Beach Road, Paradise Island<br>
+            Phone: (555) 123-4567<br>
+            Email: info@sunsetparadise.com
+        </p>
+        
+        <h3>Book Now</h3>
+        <form>
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required><br><br>
+            
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required><br><br>
+            
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="">Select a room type</option>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Suite</option>
+                <option value="ocean">Ocean View Villa</option>
+                <option value="family">Family Suite</option>
+            </select><br><br>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="6" required><br><br>
+            
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+</html>
