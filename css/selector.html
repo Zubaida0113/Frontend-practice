@@ -46,22 +46,49 @@
             color: white;
             background-color: blueviolet;
         }
+
         /* Pseudo Selector */
-        a:link{
+        a:link {
             /* define color of unvisited link */
-            color: green; 
+            color: green;
         }
-        a:visited{
+
+        a:visited {
             /* define the color of visited link */
             color: red;
         }
-        a:active{
+
+        a:active {
             /* styles elements when they are actively being clicked and held. */
             color: black;
         }
-        a:hover{
+
+        a:hover {
             /* styles elements when the mouse is over them. */
             background-color: aqua;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* [attribute=value]:
+         Selects all elements with the specified attribute and whose value exactly matches the given value. */
+
+        /* Select text input fields */
+        [type="text"] {
+            border: 1px solid #e21414;
+            color: #f08080;
+        }
+        [type="password"] {
+            border: 1px solid #e21414;
+            color: #f08080;
+        }
+
+        /* Select elements with the "error" class */
+        [class~=error] {
+            background-color: #f08080;
         }
     </style>
 </head>
@@ -83,6 +110,11 @@
     <a href="http://google.com">Google</a><br>
     <a href="http://Twitter.com">Twitter</a><br>
 
+    <a href="https://www.example.com">Example Link</a><br>
+    <input type="text" placeholder="Enter your name"><br>
+    <input type="password" placeholder="Enter your password"><br>
+    <img src="/html/first.jpg" alt="An image">
+    <div class="error-message">Error occurred.</div>
 </body>
 
 </html>
