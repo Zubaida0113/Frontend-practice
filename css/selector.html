@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selector</title>
+
+    <style>
+        /* Universal selector */
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        /* element selector */
+        /* div {
+            background-color: red;
+        } */
+
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        #green {
+            background-color: greenyellow;
+        }
+
+        #main-heading {
+            color: blue;
+        }
+
+        .intro {
+            background: #14b9a3;
+            font-size: 18px;
+        }
+
+        /* Descendant Selector - element should be inside of the parenrt element to work whether directly or indirectly */
+        div p {
+            background-color: rgb(10, 3, 3);
+            color: rgb(245, 239, 250);
+        }
+
+        /* Child Selector - element should be a direct child of the parent element to work */
+        div>p {
+            color: white;
+            background-color: blueviolet;
+        }
+        /* Pseudo Selector */
+        a:link{
+            /* define color of unvisited link */
+            color: green; 
+        }
+        a:visited{
+            /* define the color of visited link */
+            color: red;
+        }
+        a:active{
+            /* styles elements when they are actively being clicked and held. */
+            color: black;
+        }
+        a:hover{
+            /* styles elements when the mouse is over them. */
+            background-color: aqua;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1 id="main-heading">Welcome</h1>
+    <p class="intro">This is an introductory paragraph.</p>
+    <p class="intro">This is another introductory paragraph.</p>
+
+    <div class="red">
+        I am a div
+        <p>I am a direct child element of div</p>
+        <span>
+            <p>I am a descendant child element of div</p>
+        </span>
+    </div>
+
+    <div id="green">I am another div</div>
+    <a href="http://google.com">Google</a><br>
+    <a href="http://Twitter.com">Twitter</a><br>
+
 </body>
+
 </html>
