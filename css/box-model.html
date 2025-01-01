@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aquamarine;
+        }
+        .box1{
+            color: black;
+            padding: 7px;
+            margin: 5px;
+            border: 5px solid black;
+            height: 200px; 
+            /* If we are specifying height without box-sizing then the height would be of purely for the content */
+            /* Height= content */
+            box-sizing: border-box;
+            /* But if we add the box-sizing property then the Height = padding + content + border (margin is not included) */
+        }
+        .box2{
+            color: blue;
+            padding: 7px;
+            margin: 7px;
+            border: 5px dashed rgb(168, 8, 107);
+            height: 200px; 
+            box-sizing: border-box;
+        }
+        /* Notice how both box1 and box2 have different margin but the resultant difference between them is Max( margin(box1),margin(box2) ) - This property is called Margin Collapse*/
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a Box</div>
+    <div class="box box2">I am another Box</div>
+</body>
+</html>
