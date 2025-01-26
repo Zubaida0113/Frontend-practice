@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body {  
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            min-height: 100vh;
+            }
+            .toggle{
+                position: fixed;
+                top: 20px;
+                right: 50px;
+            }
+        .loading { 
+            max-width: 50%; 
+            line-height: 1.5; 
+            font-size: 1.5rem;
+            font-weight: bold; 
+            text-align: center;
+            }
+        .loading__author {  
+            font-weight: normal;
+            font-size: 1rem;
+            color: rgba(189,189,189 ,1); 
+            margin: 0.6rem 0 2rem 0; 
+            display: block;
+            }
+            .box{
+                display: flex; 
+                justify-content: space-evenly;
+            }
+        .loading__anim {  
+           
+    width: 35px;   
+         height: 35px; 
+           display: inline-block; 
+           border: 5px solid rgba(189,189,189 ,0.25);
+           border-radius: 50%;
+           border-left-color: rgba(3,155,229 ,1); 
+            border-top-color: rgba(3,155,229 ,1);
+            animation: rotate 1s infinite linear;
+                                }
+        @keyframes rotate {
+              to { 
+                  transform: rotate(1turn)
+                  }
+            }
+           .loading__anim2{
+            width: 35px;   
+              height: 35px; 
+              display: inline-block; 
+                border: 5px solid rgba(189,189,189 ,0.25);
+           border-radius: 50%;
+           border-left-color: black ;
+            border-top-color: black;
+            animation: rotate 1s infinite linear;
+           }
+    </style>
+    </head>
+<body>
+    <div class="toggle">d
+        <img src="" alt="">
+    </div>
+    <section class="loading">
+       Different paths to success, but the same destination. 
+        <span class="loading__author"> - Zubaida Sehnaz</span>
+        <div class="box">
+            <span class="loading__anim"></span>
+            <span class="loading__anim2"></span>
+            <!-- <span class="loading__anim"></span> -->
+        </div>
+    </section>
+</body>
+</html>
