@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <script>
+        window.onload=function(){
+            let a = document.getElementsByTagName('div')[0]
+            // a.innerHTML= a.innerHTML+ '<h1>Hello everyone</h1>';
+
+            let div = document.createElement('div'); // Creates a new div element
+            div.innerHTML = '<h1>Hello everyone</h1>'; // Adds content inside the new div
+            // a.appendChild(div); // Appends the new div inside the first div
+            // a.append(div); // Appends the new div before the end of the first div
+            // a.prepend(div)// Appends the new div after the end of the first div
+            // a.before(div)
+            // a.after(div)
+        // a.replaceWith(div)
+        }
+        
+    </script>
+</head>
+<body>
+    I am outer first line
+    <div class="container">
+        I am inner first line
+        <div id="first">I am first container</div>
+        I am inner last line
+    </div>
+    I am outer last line
+</body>
+</html>
