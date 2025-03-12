@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Image Animation</title>
+    <style>
+        .floating-image {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .floating-image.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <img src="path/to/your/image.jpg" alt="Floating Image" class="floating-image" id="image">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const image = document.getElementById('image');
+            setTimeout(() => {
+                image.classList.add('visible');
+            }, 500); // Delay to simulate floating effect
+        });
+    </script>
+</body>
+</html>
