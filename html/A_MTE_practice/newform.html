@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        canvas {
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        svg {
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>HTML5 Graphics: Canvas & SVG</h1>
+    <!-- Canvas Example 
+    <h2>Canvas Drawing</h2>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    <script>
+        // Get the canvas element
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        // Draw a blue rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 100);
+        // Draw a red circle
+        ctx.beginPath();
+        ctx.arc(250, 100, 50, 0, Math.PI * 2);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.stroke();
+        // Draw a line
+        ctx.beginPath();
+        ctx.moveTo(20, 180);
+        ctx.lineTo(380, 180);
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+    </script> -->
+    <!-- SVG Example -->
+    <!-- <h2>SVG Graphics</h2>
+    <svg width="400" height="200">
+        <!-- Draw a rectangle 
+        <rect x="50" y="50" width="100" height="100" fill="blue" stroke="black" stroke- width="2" />
+        <!-- Draw a circle 
+        <circle cx="250" cy="100" r="50" fill="red" stroke="black" stroke-width="2" />
+        <!-- Draw a line 
+        <line x1="20" y1="180" x2="380" y2="180" stroke="green" stroke-width="3" />
+        <!-- Add text 
+        <text x="150" y="30" fill="black" font-size="18">SVG Example</text>
+    </svg> -->
+
+
+    <!-- <h2>Sample Form</h2>
+
+    <form action="action.php" method="post">
+
+        <label for="n1">First Name : </label><br>
+        <input type="text" name="firstname" id="n1"><br>
+        <span>Enter a valid name</span><br> -->
+
+    <!-- <label for="n2">Last Name : </label><br>
+        <input type="text" name="lastname" id="n2"><br> -->
+    <!-- <span>Enter a valid name</span><br> -->
+
+    <!-- <label for="n3">Email : </label><br>
+        <input type="email" name="" id="n3"><br>
+
+        <label for="n4">Age : </label><br>
+        <input type="number" name="" id="n4"><br>
+
+        <label for="n5">Booking Date: </label><br>
+        <input type="date" name="" id="n5"><br>
+
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="n6-male" value="male">
+        <label for="n6-male">Male</label>
+
+        <input type="radio" name="gender" id="n6-female" value="female">
+        <label for="n6-female">Female</label><br>
+
+
+        <label for="n7">Choose favorite BTS member</label><br>
+        <input type="checkbox" name="" id="n7">SUGA <br>
+        <input type="checkbox" name="" id="n7">JIN <br>
+        <input type="checkbox" name="" id="n7">JIMIN <br>
+        <input type="checkbox" name="" id="n7">RM <br> -->
+
+    <!-- <input type="submit" value="submit">
+    </form> -->
+</body>
+
+</html>
+
+<!-- 
+FOR ATTRIBUTE
+
+The for attribute is used in <label> elements to associate the label with a specific form input.
+The value of the for attribute must match the id of the input element it is associated with.
+When a user clicks on the label, the associated input field is automatically focused, improving usability.
+
+NAME ATTRIBUTE
+
+The name attribute is used in form inputs to identify the data when the form is submitted.
+It acts as the key in the key-value pair sent to the server.
+Inputs with the same name are grouped together (e.g., radio buttons), and only the selected value is submitted.
+
+How They Work Together
+The for attribute improves accessibility by linking labels to inputs, 
+<label for="n6-male">Male</label>
+<input type="radio" name="gender" id="n6-male" value="male">
+
+<label for="n6-female">Female</label>
+<input type="radio" name="gender" id="n6-female" value="female"><br><label for="n6-male">Male</label>
+<input type="radio" name="gender" id="n6-male" value="male">
+
+<label for="n6-female">Female</label>
+<input type="radio" name="gender" id="n6-female" value="female"><br>while the name attribute ensures the data is properly grouped and identified when submitted.
+
+Example from your code:
+<label for="n6-male">Gender:</label>
+<input type="radio" name="gender" id="n6-male" value="male"> Male
+<input type="radio" name="gender" id="n6-female" value="female"> Female
+
+for="n6-male" links the label "Gender:" to the radio button with id="n6-male". Clicking the label will select the "Male" option.
+name="gender" groups the radio buttons so only one can be selected, and the selected value (male or female) will be submitted.
+ -->
