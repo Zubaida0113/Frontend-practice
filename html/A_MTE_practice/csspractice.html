@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h2{
+        h2 {
             color: blue;
             background-color: rgb(97, 239, 225);
             font-family: Arial, Helvetica, sans-serif;
             font-style: italic;
+            margin: 10px 120px 10px 30px;
+            text-shadow: 2px 2px 5px red, -2px -2px 5px dodgerblue;
         }
-        p{
+
+        p {
             color: red;
             background-color: yellow;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,20 +25,22 @@
             text-decoration: underline;
             text-transform: uppercase;
         }
-        div{
+
+        div.img {
             width: 500px;
             height: 400px;
             background-image: url(../first.jpg);
-            
+
             background-size: cover;
             background-position: center;
-            border-radius: 40px 90px;
+            border-radius: 50px 25px;
             box-sizing: border-box;
             box-shadow: 20px 25px grey;
             border: 5px solid black;
             margin: 20px auto;
         }
-        a{
+
+        a {
             color: salmon;
             background: #000;
             text-decoration: none;
@@ -44,39 +50,134 @@
             border-radius: 5px 20px;
             box-shadow: 2px 2px 5px grey;
         }
-        a:hover{
+
+        a:hover {
             background-color: #ea1515;
             color: white;
         }
-        a:active{
+
+        a:active {
             color: springgreen;
             background-color: #ea15c3;
         }
-        table{
+
+        table {
+            margin-top: 40px;
             width: 100%;
             border: #ea1515 2px solid;
+            border-width: 5px;
+            border-style: dotted;
             /* vertical-align: middle; */
             border-collapse: collapse;
         }
-        th, td {
-border: 1px solid black;
-padding: 10px;
-text-align: center;
- border-collapse: collapse;
-}
-td {
-    background-color: #69f240;
-}
-th {
-    background-color: #1febd7;
-}
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        td {
+            background-color: #69f240;
+        }
+
+        th {
+            background-color: #1febd7;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin: 10px 50px;
+            padding: 10px 40px;
+            background-color: #f0f0f0;
+        }
+
+        ul.custom {
+            list-style-image: url(../first.jpg);
+        }
+
+        .over {
+            border: #000 2px solid;
+            font-family: fantasy;
+        }
+
+        .flowbox1 {
+            height: 100px;
+            width: 50px;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+
+        .flowbox2 {
+            height: 300px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            background-image: url(../first.jpg);
+            background-size: cover;
+
+        }
+
+        .parent {
+            position: relative;
+            background-color: #1febd7;
+            width: 30px;
+        }
+
+        .child1 {
+            position: absolute;
+            z-index: 5;
+        }
+
+        .child2 {
+            position: absolute;
+            z-index: 10;
+            /* Will appear on top */
+        }
     </style>
 </head>
+
 <body>
-    
+
     <h2>Rivers</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, labore.</p>
-    <div></div>
+    <div class="over flowbox1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum incidunt temporibus necessitatibus, amet et
+        eveniet reprehenderit fuga est quo ratione assumenda officia quae deserunt, non totam impedit inventore.
+        Aliquam, aut.
+    </div>
+    <div class="over flowbox2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veritatis molestias consequuntur, nihil
+        expedita, repudiandae sapiente unde pariatur quod inventore aspernatur delectus numquam qui perspiciatis fuga
+        quas alias ex non officia enim soluta iusto eaque praesentium laborum. Veniam aliquid enim exercitationem a
+        labore facere quo? Repudiandae, aliquam et fugiat suscipit exercitationem a consectetur amet nemo cumque
+        excepturi. Quis nemo ullam earum voluptatum quaerat omnis harum adipisci quidem ut odio corrupti molestiae
+        laborum aliquid reiciendis incidunt laudantium, vero, explicabo vitae voluptas, maiores rerum voluptate placeat
+        deleniti esse? Ad eveniet labore facere quas eligendi repellendus dolores fuga nesciunt repellat saepe
+        perspiciatis possimus in, earum natus quisquam blanditiis minima amet tempora. Minima ullam modi totam expedita
+        nam nisi. Repellendus eveniet officiis, rem, nostrum laboriosam, animi vero quos alias illo labore a. Adipisci
+        dolorem dicta reiciendis nam! Provident fugiat veniam inventore, accusantium tempora quas laborum corporis quos
+        facere, quisquam praesentium iste! Possimus enim doloribus quod repudiandae neque vitae. Sunt rerum iure, natus
+        aut nihil, excepturi cupiditate incidunt omnis deserunt accusantium veniam nisi. Delectus doloribus magnam,
+        illum at consequuntur nam vel! Quas laudantium dolores voluptate pariatur ipsam mollitia in. Velit illum dolor,
+        illo quae excepturi sequi omnis sed repudiandae cum. Vel dicta maiores sed quam nam ut asperiores impedit esse,
+        at consequatur eligendi non, dolore nisi. Necessitatibus eius alias nisi, excepturi architecto maiores. Dolores
+        ducimus cupiditate consequatur nulla maxime quibusdam praesentium magnam beatae, deserunt, eius non temporibus
+        nisi? Ipsam optio quisquam nam modi dicta possimus nostrum reiciendis id consequuntur doloremque, enim aperiam
+        suscipit, similique illo voluptate est dolor distinctio! Distinctio ab, corrupti eius officiis odio illo? In
+        cupiditate tempore optio perferendis, commodi vero praesentium sit illum numquam incidunt nihil consequuntur
+        quae modi iure quidem voluptatum. Vero numquam odit iusto eveniet eaque ratione ut, cupiditate recusandae
+        voluptatem aliquid itaque labore quod saepe non explicabo aut rem?
+    </div>
+    <div class="img"></div>
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">MDN</a>
     <table>
         <tr>
@@ -95,5 +196,31 @@ th {
             <td>Los Angeles</td>
         </tr>
     </table>
+
+    <H3>HTML LISTS</H3>
+    <ol type="I">
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Kiwi</li>
+    </ol>
+    <ul type="square">
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Kiwi</li>
+    </ul>
+    <dl>
+        <dt>Fruits</dt>
+        <dd>Mango</dd>
+        <dd>Kiwi</dd>
+
+        <dt>Cars</dt>
+        <dd>BMW</dd>
+        <dd>BMW</dd>
+    </dl>
+    <div class="circle"></div>
+    <div class="parent"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
 </body>
+
 </html>
