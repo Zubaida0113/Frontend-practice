@@ -7,25 +7,25 @@
 </head>
 <body>
     <h1>REGISTRATION FORM</h1>
-    <form name="Myform" action="#" onsubmit="return validateForm()" onreset="resetErrors()">
+    <form id="Myform" action="#" onsubmit="return validateForm()" onreset="resetErrors()">
         <p>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" placeholder="Enter your full name" > <!--For and id should be same-->
+            <input type="text" id="name" name="Name" placeholder="Enter your full name" ><br> <!--For and id should be same-->
             <span id="name-err" class="err-msg"></span>
         </p>
         <p>
             <label for="address">Address:</label>
-            <input type="text" id="address" name="Name" name="Address" placeholder="Enter your address" />
+            <input type="text" id="address" name="Address" placeholder="Enter your address" /><br>
             <span id="address-error" class="error-message"></span>
         </p>
         <p>
             <label for="email">E-mail Address:</label>
-            <input type="text" id="email" name="EMail" placeholder="Enter your email" />
+            <input type="email" id="email" name="EMail" placeholder="Enter your email" /><br>
             <span id="email-error" class="error-message"></span>
         </p>
         <p>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="Password" placeholder="Enter your password"/>
+            <input type="password" id="password" name="Password" placeholder="Enter your password"/><br>
             <span id="password-error" class="error-message"></span>
         </p>
         <p>

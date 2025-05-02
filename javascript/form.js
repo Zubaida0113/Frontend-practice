@@ -1,3 +1,5 @@
+function validateForm(){
+
 const form = document.getElementById("Myform");
 
 form.addEventListener("submit", function (e) {
@@ -17,6 +19,7 @@ form.addEventListener("submit", function (e) {
     emailErr.textContent = "";
     passErr.textContent = "";
 
+    let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let isValid=true
 
     if(name==="" || name.length<2 ||name.includes(0,9)){
@@ -27,7 +30,7 @@ form.addEventListener("submit", function (e) {
         address_err.textContent = "Please enter your address.";
         isValid = false;
     }
-    if (email === "" || !email.includes("@") || !email.includes(".")) {
+    if (email === "" || !email.test(pattern)) {
         emailErr.textContent = "Please enter a valid email address.";
         isValid = false;
     }
@@ -35,8 +38,17 @@ form.addEventListener("submit", function (e) {
         passErr.textContent = "Please enter a password with at least 6 characters.";
         isValid = false;
     }
-)}
+    // Return the validation result
+    if (!isValid) {
+        return false; // Prevent form submission if validation fails
+    }
 
+    // If valid, you can proceed with form submission or further processing
+    console.log("Form submitted successfully!");
+    return true;
+}
+)
+}
 // function resetErrors(){
 //     const name_err=document.getElementById("name-err")
 //     const address_err=document.getElementById("address-error")

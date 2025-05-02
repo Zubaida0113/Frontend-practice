@@ -55,7 +55,7 @@ let e=6
 let f=6
 console.log("ex.1")
 console.log(e==f)
-console.log(e!=f)
+console.log(e!=f) //output: false
 console.log(e===f)
 console.log(e!==f)
 let ee=7
