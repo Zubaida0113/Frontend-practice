@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Static Website</title>
+  <style>
+    body { font-family: Arial; background-color: #f0f0f0; padding: 20px; }
+    header, footer { background: #333; color: white; padding: 10px; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Site</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>This is a simple static website built using HTML5 and XHTML syntax.</p>
+    </section>
+
+    <section id="video">
+      <h2>Sample Video</h2>
+      <video width="600" controls>
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <ul>
+        <li>one</li>
+        <li>two</li>
+      </ul>
+      <ol>
+        <li>one</li>
+        <li>two</li>
+      </ol>
+      <dl>
+        <dt>Term 1</dt>
+        <dd>Description for term 1</dd>
+        <dt>Term 2</dt>
+        <dd>Description for term 2</dd>
+      </dl>
+       <h2>Sample Audio</h2>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="Enter your email" data-list="zubaida@gmail.com" required /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Static Website</p>
+  </footer>
+</body>
+</html>
