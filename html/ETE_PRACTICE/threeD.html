@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      perspective: 1000px;
+      text-align: center;
+      margin-top: 100px;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .cube {
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      background-color: royalblue;
+      color: white;
+      font-size: 24px;
+      line-height: 150px;
+      transform-style: preserve-3d;
+      animation: rotateCube 5s infinite linear;
+    }
+
+    @keyframes rotateCube {
+      0% {
+        transform: rotateY(0deg) rotateX(0deg);
+      }
+      50% {
+        transform: rotateY(180deg) rotateX(180deg);
+      }
+      100% {
+        transform: rotateY(360deg) rotateX(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cube">3D Box</div>
+
+</body>
+</html>
